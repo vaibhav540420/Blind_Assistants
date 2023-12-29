@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77CA74"
+    android:padding="30dp"
+    tools:context=".MainActivity9">
+
+    <EditText
+        android:id="@+id/txt_number"
+        android:layout_width="342dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="phone"
+        android:gravity="center"
+        android:hint="@string/enter_number"
+        android:inputType="phone"
+        android:textColorHint="#192125"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_call"
+        android:layout_width="339dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_700"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_baseline_mic_24"
+        android:text="@string/call"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/txt_number"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="340dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_call"
+        app:layout_constraintVertical_bias="0.291"
+        app:srcCompat="@drawable/ic_baseline_call_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
